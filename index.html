@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Day Forecast</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container text-center">
+        <!--     -Title
+            <h1 id="heading">Weather</h1> -->
+            <!---Search Bar--->
+            <div id="search-wrapper">
+              <form id="searchbar">
+                <div class="row">
+                  <div class="input-group">
+                    <input type="text" class="form-control text-center" id = "city-input" placeholder="Enter a City">
+                    <span class="input-group-btn">
+                        <button class="btn" type="button" id = "search-btn">
+                          <i class = "fa fa-search">
+                          </i>
+                        </button>
+                      </span>
+                    <!-- /input-group -->
+                  </div>
+                  <div id = temp-control class = "pull-right">
+                    <span id = "cel">°C</span>/<span id = "far">°F</span> 
+                  </div>
+                  <!--row-->
+                </div>
+              </form>
+              <!--search-wrapper-->
+            </div>
+            
+            <!----Weather information-->
+            <div id = "weather-info" class = "text-center">
+                <!--Location-->
+                <div class = "row card" id = "header-info">
+                  <div class = "first-row col s6" id="location"> 
+                  </div>
+                 <!--Current Temperature-->
+                  <div class = "first-row col s6  offset-s3" id = "current-temp">
+                    <div id = "curr-temp"></div>
+                    <img id = "curr-icon">
+                  </div>
+              </div>
+               <!--5 day forecast-->
+              <div class = "row text-center" id = "forecast">
+                <div class = "forecast-days card">  
+                  <div id = "day1-date"></div>
+                  <div id = "day1-temp"></div>
+                  <img id = day1-icon>
+                </div>
+                <div class = "forecast-days card">
+                  <div id = "day2-date"></div>
+                  <div id = "day2-temp"></div>
+                  <img id = day2-icon>
+                </div>
+                <div class = "forecast-days card">  
+                  <div id = "day3-date"></div>
+                  <div id = "day3-temp"></div>
+                  <img id = day3-icon>
+                </div>
+                 <div class = "forecast-days card"> 
+                   <div id = "day4-date"></div>
+                  <div id = "day4-temp"></div>
+                  <img id = day4-icon>
+                </div>
+                <div class = "forecast-days card">  
+                  <div id = "day5-date"></div>
+                  <div id = "day5-temp"></div>
+                  <img id = day5-icon>
+                </div>
+              </div>
+              
+              <!--Weather Info div-->
+            </div>
+        
+          <!--End of container div-->
+          </div> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="forecast.js"></script>
+</body>
+</html>
+
