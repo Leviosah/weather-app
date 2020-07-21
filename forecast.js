@@ -1,6 +1,6 @@
 
 var paramProp = {   
-    'appid': '0b25d9f963f5f0b43ea328aeb3d40e40',    
+    'appid': '',    
 }
      
 function generateQuery(city) 
