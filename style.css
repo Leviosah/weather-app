@@ -58,7 +58,7 @@
   
     display:inline-block;
     padding-top: 20px;
-    height: 125px;
+    height: 175px;
     width: 125px;
   }
   
@@ -66,4 +66,8 @@
   #curr-icon {
     width: 75px;
     height: 75px;
+  }
+
+  .center {
+    padding-top: 55px;
   }

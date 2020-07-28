@@ -10,9 +10,6 @@
 </head>
 <body>
     <div class="container text-center">
-        <!--     -Title
-            <h1 id="heading">Weather</h1> -->
-            <!---Search Bar--->
             <div id="search-wrapper">
               <form id="searchbar">
                 <div class="row">
@@ -24,64 +21,68 @@
                           </i>
                         </button>
                       </span>
-                    <!-- /input-group -->
                   </div>
                   <div id = temp-control class = "pull-right">
                     <span id = "cel">°C</span>/<span id = "far">°F</span> 
                   </div>
-                  <!--row-->
                 </div>
               </form>
-              <!--search-wrapper-->
             </div>
             
-            <!----Weather information-->
             <div id = "weather-info" class = "text-center">
-                <!--Location-->
                 <div class = "row card" id = "header-info">
                   <div class = "first-row col s6" id="location"> 
                   </div>
-                 <!--Current Temperature-->
                   <div class = "first-row col s6  offset-s3" id = "current-temp">
                     <div id = "curr-temp"></div>
-                    <img id = "curr-icon">
+                    <img id = "curr-icon"></img>
                   </div>
+                  <div class = "center">
+                    <div id = "curr-hum"></div>
+                    <div id = "curr-wind"></div>
+                    <div id = "curr-uv"></div>
+                  </div>
+
+                
               </div>
-               <!--5 day forecast-->
               <div class = "row text-center" id = "forecast">
                 <div class = "forecast-days card">  
                   <div id = "day1-date"></div>
                   <div id = "day1-temp"></div>
+                  <div id = "day1-uv"></div>
                   <img id = day1-icon>
                 </div>
                 <div class = "forecast-days card">
                   <div id = "day2-date"></div>
                   <div id = "day2-temp"></div>
+                  <div id = "day2-uv"></div>
                   <img id = day2-icon>
                 </div>
                 <div class = "forecast-days card">  
                   <div id = "day3-date"></div>
                   <div id = "day3-temp"></div>
+                  <div id = "day3-uv"></div>
                   <img id = day3-icon>
                 </div>
                  <div class = "forecast-days card"> 
                    <div id = "day4-date"></div>
                   <div id = "day4-temp"></div>
+                  <div id = "day4-uv"></div>
                   <img id = day4-icon>
                 </div>
                 <div class = "forecast-days card">  
                   <div id = "day5-date"></div>
                   <div id = "day5-temp"></div>
+                  <div id = "day5-uv"></div>
                   <img id = day5-icon>
                 </div>
               </div>
               
-              <!--Weather Info div-->
             </div>
         
-          <!--End of container div-->
           </div> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="forecast.js"></script>
 </body>
 </html>
